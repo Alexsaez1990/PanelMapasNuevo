@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+            crossorigin=""/>
+
+            <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin="">
+        </script>
+        <script src="../Proj4Leaflet-master/lib/proj4-compressed.js"></script>
+        <script src="../Proj4Leaflet-master/src/proj4leaflet.js"></script>
+        <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+        <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+        <script src="L.Map.Sync.js"></script> 
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../dist/leaflet.ajax.js"></script>
+        <link rel="stylesheet" href="mainPanelMapas.css"/>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        
+
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <div id="contenido">
+        
+        <div id="mapas">
+            <div id="mapa1" onchange="compruebaCapaBase()">
+                <label id="labelFecha1" class="labelFecha"></label>
+            </div>
+            <div id="mapa2">
+                <label id="labelFecha2" class="labelFecha"></label>
+            </div>
+            <div id="mapa3">
+                <label id="labelFecha3" class="labelFecha"></label>
+            </div>
+            <div id="mapa4">
+                <label id="labelFecha4" class="labelFecha"></label>
+            </div>
+            <div id="mapa5">
+                <label id="labelFecha5" class="labelFecha"></label>
+            </div>
+            <div id="leyenda_movil" class="leyenda_movil"></div> <!--da problemas con la leyenda escritorio al ponerlos en la misma class-->
+        </div>
+        <nav class="main-navigation" id="main-navigation">
+            <div class="nav-links">
+                <ul>
+                    <div id="menu_movil" class="menu">
+                        <div id="logo_movil" class="logo">
+                            <img id="img_movil" class="img" src="../img/logo_conaf.png"/>
+                        </div>
+                        <div id="selector_movil" class="selector">
+                            <label><input type="checkbox" id="cbx_br_movil" value="cbx_br" class="cbx_br" onclick="cargaBR_movil()"> BR</label><br>
+                            <label><input type="checkbox" id="cbx_hcfm_movil" value="cbx_hcfm" class="cbx_hcfm" onclick="cargaHCFM_movil()"> HCFM</label><br>
+                            <label><input type="checkbox" id="cbx_hr_movil" value="cbx_hr" class="cbx_hr" onclick="cargaHR_movil()"> HR</label><br>
+                            <label><input type="checkbox" id="cbx_probIgn_movil" value="cbx_probIgn" class="cbx_probIgn" onclick="cargaProbIgnicion_movil()"> Prob. Ignición</label><br>
+                            <label><input type="checkbox" id="cbx_temp_movil" value="cbx_temp" class="cbx_temp" onclick="cargaTemp_movil()"> Temperatura</label><br>
+                            <label><input type="checkbox" id="cbx_viento_movil" value="cbx_viento" class="cbx_viento" onclick="cargaViento_movil()"> Vel. Viento</label><br>
+                        </div>
+                        <div id="calendar_movil" class="calendar">
+                            <input type="date" id="abreCalendar_movil" class="abreCalendar" value="" min="2022-01-01" max="" onclick="limpiaParaFecha()" onchange="fechaMapa_movil()">
+                        </div>
+                    </div>
+                <span></span>
+                </ul>
+            </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div id="menu" class="menu">
+            <div id="logo" class="logo">
+                <img id="img" class="img" src="../img/logo_conaf.png"/>
+            </div>
+            <div id="selector" class="selector">
+                <label><input type="checkbox" id="cbx_br" class="cbx_br" value="cbx_br" onclick="cargaBR()"> BR</label><br>
+                <label><input type="checkbox" id="cbx_hcfm" class="cbx_hcfm" value="cbx_hcfm" onclick="cargaHCFM()"> HCFM</label><br>
+                <label><input type="checkbox" id="cbx_hr" class="cbx_hr" value="cbx_hr" onclick="cargaHR()"> HR</label><br>
+                <label><input type="checkbox" id="cbx_probIgn" class="cbx_probIgn" value="cbx_probIgn" onclick="cargaProbIgnicion()"> Prob. Ignición</label><br>
+                <label><input type="checkbox" id="cbx_temp" class="cbx_temp" value="cbx_temp" onclick="cargaTemp()"> Temperatura</label><br>
+                <label><input type="checkbox" id="cbx_viento" class="cbx_viento" value="cbx_viento" onclick="cargaViento()"> Vel. Viento</label><br>
+            </div>
+            <div id="calendar" class="calendar">
+                <input type="date" id="abreCalendar" class="abreCalendar" value="" min="2022-01-01" max="" onclick="limpiaParaFecha()" onchange="fechaMapa()">
+            </div>
+            <div id="leyenda" class="leyenda"></div>
+        </div>
+
+        
+    </div>
+
+    <script src="mainPanelMapas.js"></script> 
+
+    
+</body>
+</html>

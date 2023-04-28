@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 1241px;
+            height: 813px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/20230118_BR_1.js"></script>
+        <script src="data/20230118_ProbIgnicion_2.js"></script>
+        <script src="data/20230118_VViento_3.js"></script>
+        <script src="data/20230118_HCFM_4.js"></script>
+        <script src="data/20230118_HR_5.js"></script>
+        <script src="data/20230118_Temp_6.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[-58.88937454524434,-112.55327487773677],[-16.332697258601947,-25.910778719229025]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_StamenTerrainBackground_0');
+        map.getPane('pane_StamenTerrainBackground_0').style.zIndex = 400;
+        var layer_StamenTerrainBackground_0 = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.png', {
+            pane: 'pane_StamenTerrainBackground_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 18
+        });
+        layer_StamenTerrainBackground_0;
+        map.addLayer(layer_StamenTerrainBackground_0);
+        function pop_20230118_BR_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['count'] !== null ? autolinker.link(feature.properties['count'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_20230118_BR_1_0(feature) {
+            switch(String(feature.properties['label'])) {
+                case '1':
+                    return {
+                pane: 'pane_20230118_BR_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,245,240,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '2':
+                    return {
+                pane: 'pane_20230118_BR_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(252,190,165,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3':
+                    return {
+                pane: 'pane_20230118_BR_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(251,112,80,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '4':
+                    return {
+                pane: 'pane_20230118_BR_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(211,32,32,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '5':
+                    return {
+                pane: 'pane_20230118_BR_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(103,0,13,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_20230118_BR_1');
+        map.getPane('pane_20230118_BR_1').style.zIndex = 401;
+        map.getPane('pane_20230118_BR_1').style['mix-blend-mode'] = 'normal';
+        var layer_20230118_BR_1 = new L.geoJson(json_20230118_BR_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_20230118_BR_1',
+            layerName: 'layer_20230118_BR_1',
+            pane: 'pane_20230118_BR_1',
+            onEachFeature: pop_20230118_BR_1,
+            style: style_20230118_BR_1_0,
+        });
+        bounds_group.addLayer(layer_20230118_BR_1);
+        map.addLayer(layer_20230118_BR_1);
+        function pop_20230118_ProbIgnicion_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['count'] !== null ? autolinker.link(feature.properties['count'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_20230118_ProbIgnicion_2_0(feature) {
+            switch(String(feature.properties['label'])) {
+                case '10':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(193,120,229,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '20':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,114,255,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '30':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,175,255,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '40':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,237,255,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '50':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(34,154,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '60':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(247,255,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '70':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,204,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '80':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,153,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '90':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,102,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '100':
+                    return {
+                pane: 'pane_20230118_ProbIgnicion_2',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(241,24,16,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_20230118_ProbIgnicion_2');
+        map.getPane('pane_20230118_ProbIgnicion_2').style.zIndex = 402;
+        map.getPane('pane_20230118_ProbIgnicion_2').style['mix-blend-mode'] = 'normal';
+        var layer_20230118_ProbIgnicion_2 = new L.geoJson(json_20230118_ProbIgnicion_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_20230118_ProbIgnicion_2',
+            layerName: 'layer_20230118_ProbIgnicion_2',
+            pane: 'pane_20230118_ProbIgnicion_2',
+            onEachFeature: pop_20230118_ProbIgnicion_2,
+            style: style_20230118_ProbIgnicion_2_0,
+        });
+        bounds_group.addLayer(layer_20230118_ProbIgnicion_2);
+        map.addLayer(layer_20230118_ProbIgnicion_2);
+        function pop_20230118_VViento_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['count'] !== null ? autolinker.link(feature.properties['count'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_20230118_VViento_3_0(feature) {
+            switch(String(feature.properties['label'])) {
+                case '1':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(92,162,209,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '2':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(5,93,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(34,154,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '4':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(178,223,138,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '5':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,247,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '6':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,204,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '7':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(249,157,89,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '8':
+                    return {
+                pane: 'pane_20230118_VViento_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(227,26,28,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_20230118_VViento_3');
+        map.getPane('pane_20230118_VViento_3').style.zIndex = 403;
+        map.getPane('pane_20230118_VViento_3').style['mix-blend-mode'] = 'normal';
+        var layer_20230118_VViento_3 = new L.geoJson(json_20230118_VViento_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_20230118_VViento_3',
+            layerName: 'layer_20230118_VViento_3',
+            pane: 'pane_20230118_VViento_3',
+            onEachFeature: pop_20230118_VViento_3,
+            style: style_20230118_VViento_3_0,
+        });
+        bounds_group.addLayer(layer_20230118_VViento_3);
+        map.addLayer(layer_20230118_VViento_3);
+        function pop_20230118_HCFM_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['count'] !== null ? autolinker.link(feature.properties['count'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_20230118_HCFM_4_0(feature) {
+            switch(String(feature.properties['label'])) {
+                case '1':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,197,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '2':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(168,0,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '4':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,188,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '5':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '6':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(163,255,115,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '7':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(76,230,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '8':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(38,115,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '9':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(115,178,255,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '10':
+                    return {
+                pane: 'pane_20230118_HCFM_4',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,9,255,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_20230118_HCFM_4');
+        map.getPane('pane_20230118_HCFM_4').style.zIndex = 404;
+        map.getPane('pane_20230118_HCFM_4').style['mix-blend-mode'] = 'normal';
+        var layer_20230118_HCFM_4 = new L.geoJson(json_20230118_HCFM_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_20230118_HCFM_4',
+            layerName: 'layer_20230118_HCFM_4',
+            pane: 'pane_20230118_HCFM_4',
+            onEachFeature: pop_20230118_HCFM_4,
+            style: style_20230118_HCFM_4_0,
+        });
+        bounds_group.addLayer(layer_20230118_HCFM_4);
+        map.addLayer(layer_20230118_HCFM_4);
+        function pop_20230118_HR_5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['count'] !== null ? autolinker.link(feature.properties['count'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_20230118_HR_5_0(feature) {
+            switch(String(feature.properties['label'])) {
+                case '1':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,197,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '2':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(133,2,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '4':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,188,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '5':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '6':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(163,255,115,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '7':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(76,230,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '8':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(38,115,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '9':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(115,178,255,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '10':
+                    return {
+                pane: 'pane_20230118_HR_5',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,53,255,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_20230118_HR_5');
+        map.getPane('pane_20230118_HR_5').style.zIndex = 405;
+        map.getPane('pane_20230118_HR_5').style['mix-blend-mode'] = 'normal';
+        var layer_20230118_HR_5 = new L.geoJson(json_20230118_HR_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_20230118_HR_5',
+            layerName: 'layer_20230118_HR_5',
+            pane: 'pane_20230118_HR_5',
+            onEachFeature: pop_20230118_HR_5,
+            style: style_20230118_HR_5_0,
+        });
+        bounds_group.addLayer(layer_20230118_HR_5);
+        map.addLayer(layer_20230118_HR_5);
+        function pop_20230118_Temp_6(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['count'] !== null ? autolinker.link(feature.properties['count'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_20230118_Temp_6_0(feature) {
+            switch(String(feature.properties['label'])) {
+                case '1':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,53,255,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '2':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(92,162,209,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(5,93,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '4':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(48,196,7,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '5':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,247,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '6':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,204,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '7':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,102,0,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '8':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(227,26,28,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '9':
+                    return {
+                pane: 'pane_20230118_Temp_6',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(133,2,0,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_20230118_Temp_6');
+        map.getPane('pane_20230118_Temp_6').style.zIndex = 406;
+        map.getPane('pane_20230118_Temp_6').style['mix-blend-mode'] = 'normal';
+        var layer_20230118_Temp_6 = new L.geoJson(json_20230118_Temp_6, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_20230118_Temp_6',
+            layerName: 'layer_20230118_Temp_6',
+            pane: 'pane_20230118_Temp_6',
+            onEachFeature: pop_20230118_Temp_6,
+            style: style_20230118_Temp_6_0,
+        });
+        bounds_group.addLayer(layer_20230118_Temp_6);
+        map.addLayer(layer_20230118_Temp_6);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'20230118_Temp<br /><table><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_Menora00.png" /></td><td>Menor a 0</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_051.png" /></td><td>0 - 5</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_5102.png" /></td><td>5 - 10</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_10153.png" /></td><td>10 - 15</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_15204.png" /></td><td>15 - 20</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_20255.png" /></td><td>20 - 25</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_25306.png" /></td><td>25 - 30</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_30357.png" /></td><td>30 - 35</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_Temp_6_Mayora358.png" /></td><td>Mayor a 35</td></tr></table>': layer_20230118_Temp_6,'20230118_HR<br /><table><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_0100.png" /></td><td>0 - 10</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_10201.png" /></td><td>10 - 20</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_20302.png" /></td><td>20 - 30</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_30403.png" /></td><td>30 - 40</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_40504.png" /></td><td>40 - 50</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_50605.png" /></td><td>50 - 60</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_60706.png" /></td><td>60 - 70</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_70807.png" /></td><td>70 - 80</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_80908.png" /></td><td>80 - 90</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HR_5_901009.png" /></td><td>90 - 100</td></tr></table>': layer_20230118_HR_5,'20230118_HCFM<br /><table><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_020.png" /></td><td>0 - 2%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_241.png" /></td><td>2 - 4%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_462.png" /></td><td>4 - 6%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_683.png" /></td><td>6 - 8%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_8104.png" /></td><td>8 - 10%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_10125.png" /></td><td>10 - 12%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_12156.png" /></td><td>12 - 15%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_15207.png" /></td><td>15 - 20%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_20258.png" /></td><td>20 - 25%</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_HCFM_4_259.png" /></td><td>> 25%</td></tr></table>': layer_20230118_HCFM_4,'20230118_VViento<br /><table><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_Calmo0.png" /></td><td>Calmo</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_3a51.png" /></td><td>3 a 5</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_5a102.png" /></td><td>5 a 10</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_10a153.png" /></td><td>10 a 15</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_15a204.png" /></td><td>15 a 20</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_20a255.png" /></td><td>20 a 25</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_25a306.png" /></td><td>25 a 30</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_VViento_3_Mayora307.png" /></td><td>Mayor a 30</td></tr></table>': layer_20230118_VViento_3,'20230118_ProbIgnicion<br /><table><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_100.png" /></td><td>10</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_201.png" /></td><td>20</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_302.png" /></td><td>30</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_403.png" /></td><td>40</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_504.png" /></td><td>50</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_605.png" /></td><td>60</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_706.png" /></td><td>70</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_807.png" /></td><td>80</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_908.png" /></td><td>90</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_ProbIgnicion_2_1009.png" /></td><td>100</td></tr></table>': layer_20230118_ProbIgnicion_2,'20230118_BR<br /><table><tr><td style="text-align: center;"><img src="legend/20230118_BR_1_10.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_BR_1_21.png" /></td><td>2</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_BR_1_32.png" /></td><td>3</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_BR_1_43.png" /></td><td>4</td></tr><tr><td style="text-align: center;"><img src="legend/20230118_BR_1_54.png" /></td><td>5</td></tr></table>': layer_20230118_BR_1,"Stamen Terrain Background": layer_StamenTerrainBackground_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        </script>
+    </body>
+</html>

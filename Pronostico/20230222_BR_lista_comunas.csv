@@ -1,0 +1,320 @@
+date,reg_order,com_id,REGION,PROVINCIA,COMUNA,nom_minrel,nom_iso,br_ha,com_ha,proportion
+22-02-2023,2,1402,Tarapacá,Tamarugal,Camiña,TPCA,01-TA,0.0,37126.0,0
+22-02-2023,2,1404,Tarapacá,Tamarugal,Huara,TPCA,01-TA,0.0,120216.0,0
+22-02-2023,2,1401,Tarapacá,Tamarugal,Pozo Almonte,TPCA,01-TA,0.0,39137.0,0
+22-02-2023,2,1403,Tarapacá,Tamarugal,Colchane,TPCA,01-TA,0.0,149533.0,0
+22-02-2023,2,1405,Tarapacá,Tamarugal,Pica,TPCA,01-TA,0.0,107384.0,0
+22-02-2023,3,2202,Antofagasta,El Loa,Ollagüe,ANTOF,02-AN,1480.0,9632.0,15
+22-02-2023,3,2201,Antofagasta,El Loa,Calama,ANTOF,02-AN,0.0,57209.0,0
+22-02-2023,3,2203,Antofagasta,El Loa,San Pedro de Atacama,ANTOF,02-AN,7301.0,62883.0,11
+22-02-2023,3,2302,Antofagasta,Tocopilla,María Elena,ANTOF,02-AN,0.0,370.0,0
+22-02-2023,3,2104,Antofagasta,Antofagasta,Taltal,ANTOF,02-AN,0.0,25859.0,0
+22-02-2023,4,3301,Atacama,Huasco,Vallenar,ATCMA,03-AT,0.0,137321.0,0
+22-02-2023,4,3304,Atacama,Huasco,Huasco,ATCMA,03-AT,0.0,5595.0,0
+22-02-2023,4,3303,Atacama,Huasco,Freirina,ATCMA,03-AT,0.0,62405.0,0
+22-02-2023,4,3302,Atacama,Huasco,Alto del Carmen,ATCMA,03-AT,0.0,104840.0,0
+22-02-2023,4,3103,Atacama,Copiapó,Tierra Amarilla,ATCMA,03-AT,0.0,104352.0,0
+22-02-2023,4,3102,Atacama,Copiapó,Caldera,ATCMA,03-AT,0.0,9585.0,0
+22-02-2023,4,3101,Atacama,Copiapó,Copiapó,ATCMA,03-AT,0.0,25048.0,0
+22-02-2023,4,3202,Atacama,Chañaral,Diego de Almagro,ATCMA,03-AT,0.0,10368.0,0
+22-02-2023,4,3201,Atacama,Chañaral,Chañaral,ATCMA,03-AT,0.0,18558.0,0
+22-02-2023,5,4106,Coquimbo,Elqui,Vicuña,COQ,04-CO,0.0,167247.0,0
+22-02-2023,5,4104,Coquimbo,Elqui,La Higuera,COQ,04-CO,0.0,171597.0,0
+22-02-2023,5,4105,Coquimbo,Elqui,Paiguano,COQ,04-CO,0.0,16861.0,0
+22-02-2023,5,4103,Coquimbo,Elqui,Andacollo,COQ,04-CO,0.0,38870.0,0
+22-02-2023,5,4102,Coquimbo,Elqui,Coquimbo,COQ,04-CO,0.0,113175.0,0
+22-02-2023,5,4101,Coquimbo,Elqui,La Serena,COQ,04-CO,0.0,82561.0,0
+22-02-2023,5,4204,Coquimbo,Choapa,Salamanca,COQ,04-CO,0.0,186033.0,0
+22-02-2023,5,4202,Coquimbo,Choapa,Canela,COQ,04-CO,0.0,195753.0,0
+22-02-2023,5,4203,Coquimbo,Choapa,Los Vilos,COQ,04-CO,0.0,179696.0,0
+22-02-2023,5,4201,Coquimbo,Choapa,Illapel,COQ,04-CO,0.0,167558.0,0
+22-02-2023,5,4302,Coquimbo,Limarí,Combarbalá,COQ,04-CO,0.0,123363.0,0
+22-02-2023,5,4301,Coquimbo,Limarí,Ovalle,COQ,04-CO,0.0,305067.0,0
+22-02-2023,5,4305,Coquimbo,Limarí,Río Hurtado,COQ,04-CO,0.0,101649.0,0
+22-02-2023,5,4304,Coquimbo,Limarí,Punitaqui,COQ,04-CO,0.0,102093.0,0
+22-02-2023,5,4303,Coquimbo,Limarí,Monte Patria,COQ,04-CO,0.0,225373.0,0
+22-02-2023,6,5401,Valparaíso,Petorca,La Ligua,VALPO,05-VA,0.0,109707.0,0
+22-02-2023,6,5402,Valparaíso,Petorca,Cabildo,VALPO,05-VA,0.0,118998.0,0
+22-02-2023,6,5405,Valparaíso,Petorca,Zapallar,VALPO,05-VA,0.0,28535.0,0
+22-02-2023,6,5404,Valparaíso,Petorca,Petorca,VALPO,05-VA,0.0,119295.0,0
+22-02-2023,6,5403,Valparaíso,Petorca,Papudo,VALPO,05-VA,0.0,14448.0,0
+22-02-2023,6,5506,Valparaíso,Quillota,Nogales,VALPO,05-VA,0.0,41212.0,0
+22-02-2023,6,5503,Valparaíso,Quillota,Hijuelas,VALPO,05-VA,0.0,24756.0,0
+22-02-2023,6,5504,Valparaíso,Quillota,La Cruz,VALPO,05-VA,0.0,8040.0,0
+22-02-2023,6,5502,Valparaíso,Quillota,Calera,VALPO,05-VA,0.0,3350.0,0
+22-02-2023,6,5501,Valparaíso,Quillota,Quillota,VALPO,05-VA,0.0,26407.0,0
+22-02-2023,6,5303,Valparaíso,Los Andes,Rinconada,VALPO,05-VA,0.0,10373.0,0
+22-02-2023,6,5304,Valparaíso,Los Andes,San Esteban,VALPO,05-VA,0.0,55609.0,0
+22-02-2023,6,5302,Valparaíso,Los Andes,Calle Larga,VALPO,05-VA,0.0,29071.0,0
+22-02-2023,6,5301,Valparaíso,Los Andes,Los Andes,VALPO,05-VA,0.0,25068.0,0
+22-02-2023,6,5804,Valparaíso,Marga Marga,Villa Alemana,VALPO,05-VA,0.0,9686.0,0
+22-02-2023,6,5802,Valparaíso,Marga Marga,Limache,VALPO,05-VA,0.0,28723.0,0
+22-02-2023,6,5803,Valparaíso,Marga Marga,Olmué,VALPO,05-VA,0.0,24048.0,0
+22-02-2023,6,5801,Valparaíso,Marga Marga,Quilpué,VALPO,05-VA,0.0,49680.0,0
+22-02-2023,6,5606,Valparaíso,San Antonio,Santo Domingo,VALPO,05-VA,0.0,48334.0,0
+22-02-2023,6,5605,Valparaíso,San Antonio,El Tabo,VALPO,05-VA,0.0,9960.0,0
+22-02-2023,6,5604,Valparaíso,San Antonio,El Quisco,VALPO,05-VA,0.0,3325.0,0
+22-02-2023,6,5603,Valparaíso,San Antonio,Cartagena,VALPO,05-VA,0.0,21580.0,0
+22-02-2023,6,5601,Valparaíso,San Antonio,San Antonio,VALPO,05-VA,0.0,35151.0,0
+22-02-2023,6,5602,Valparaíso,San Antonio,Algarrobo,VALPO,05-VA,0.0,17649.0,0
+22-02-2023,6,5105,Valparaíso,Valparaíso,Puchuncaví,VALPO,05-VA,0.0,25460.0,0
+22-02-2023,6,5102,Valparaíso,Valparaíso,Casablanca,VALPO,05-VA,0.0,92537.0,0
+22-02-2023,6,5103,Valparaíso,Valparaíso,Concón,VALPO,05-VA,0.0,5678.0,0
+22-02-2023,6,5101,Valparaíso,Valparaíso,Valparaíso,VALPO,05-VA,0.0,26352.0,0
+22-02-2023,6,5109,Valparaíso,Valparaíso,Viña del Mar,VALPO,05-VA,0.0,6346.0,0
+22-02-2023,6,5107,Valparaíso,Valparaíso,Quintero,VALPO,05-VA,0.0,12388.0,0
+22-02-2023,6,5706,Valparaíso,San Felipe de Aconcagua,Santa María,VALPO,05-VA,0.0,15751.0,0
+22-02-2023,6,5704,Valparaíso,San Felipe de Aconcagua,Panquehue,VALPO,05-VA,0.0,11725.0,0
+22-02-2023,6,5705,Valparaíso,San Felipe de Aconcagua,Putaendo,VALPO,05-VA,0.0,72205.0,0
+22-02-2023,6,5703,Valparaíso,San Felipe de Aconcagua,Llaillay,VALPO,05-VA,0.0,33109.0,0
+22-02-2023,6,5702,Valparaíso,San Felipe de Aconcagua,Catemu,VALPO,05-VA,0.0,35510.0,0
+22-02-2023,6,5701,Valparaíso,San Felipe de Aconcagua,San Felipe,VALPO,05-VA,0.0,15745.0,0
+22-02-2023,8,6110,Libertador General Bernardo O'Higgins,Cachapoal,Mostazal,LGBO,06-OH,1651.0,42936.0,3
+22-02-2023,8,6108,Libertador General Bernardo O'Higgins,Cachapoal,Machalí,LGBO,06-OH,0.0,73753.0,0
+22-02-2023,8,6117,Libertador General Bernardo O'Higgins,Cachapoal,San Vicente,LGBO,06-OH,24272.0,48603.0,49
+22-02-2023,8,6107,Libertador General Bernardo O'Higgins,Cachapoal,Las Cabras,LGBO,06-OH,22736.0,65276.0,34
+22-02-2023,8,6105,Libertador General Bernardo O'Higgins,Cachapoal,Doñihue,LGBO,06-OH,0.0,8569.0,0
+22-02-2023,8,6116,Libertador General Bernardo O'Higgins,Cachapoal,Requínoa,LGBO,06-OH,1645.0,62509.0,2
+22-02-2023,8,6106,Libertador General Bernardo O'Higgins,Cachapoal,Graneros,LGBO,06-OH,0.0,12540.0,0
+22-02-2023,8,6104,Libertador General Bernardo O'Higgins,Cachapoal,Coltauco,LGBO,06-OH,0.0,19752.0,0
+22-02-2023,8,6115,Libertador General Bernardo O'Higgins,Cachapoal,Rengo,LGBO,06-OH,15451.0,45345.0,34
+22-02-2023,8,6113,Libertador General Bernardo O'Higgins,Cachapoal,Pichidegua,LGBO,06-OH,14805.0,28950.0,51
+22-02-2023,8,6103,Libertador General Bernardo O'Higgins,Cachapoal,Coinco,LGBO,06-OH,0.0,8554.0,0
+22-02-2023,8,6101,Libertador General Bernardo O'Higgins,Cachapoal,Rancagua,LGBO,06-OH,0.0,19470.0,0
+22-02-2023,8,6114,Libertador General Bernardo O'Higgins,Cachapoal,Quinta de Tilcoco,LGBO,06-OH,0.0,7567.0,0
+22-02-2023,8,6112,Libertador General Bernardo O'Higgins,Cachapoal,Peumo,LGBO,06-OH,1316.0,15463.0,8
+22-02-2023,8,6102,Libertador General Bernardo O'Higgins,Cachapoal,Codegua,LGBO,06-OH,0.0,19800.0,0
+22-02-2023,8,6111,Libertador General Bernardo O'Higgins,Cachapoal,Olivar,LGBO,06-OH,0.0,2636.0,0
+22-02-2023,8,6109,Libertador General Bernardo O'Higgins,Cachapoal,Malloa,LGBO,06-OH,12473.0,19374.0,64
+22-02-2023,8,6308,Libertador General Bernardo O'Higgins,Colchagua,Placilla,LGBO,06-OH,16072.0,16072.0,100
+22-02-2023,8,6307,Libertador General Bernardo O'Higgins,Colchagua,Peralillo,LGBO,06-OH,29890.0,29890.0,100
+22-02-2023,8,6305,Libertador General Bernardo O'Higgins,Colchagua,Nancagua,LGBO,06-OH,14102.0,14102.0,100
+22-02-2023,8,6306,Libertador General Bernardo O'Higgins,Colchagua,Palmilla,LGBO,06-OH,19685.0,23294.0,84
+22-02-2023,8,6304,Libertador General Bernardo O'Higgins,Colchagua,Lolol,LGBO,06-OH,4588.0,57935.0,7
+22-02-2023,8,6303,Libertador General Bernardo O'Higgins,Colchagua,Chimbarongo,LGBO,06-OH,34382.0,45827.0,75
+22-02-2023,8,6301,Libertador General Bernardo O'Higgins,Colchagua,San Fernando,LGBO,06-OH,33456.0,129378.0,25
+22-02-2023,8,6302,Libertador General Bernardo O'Higgins,Colchagua,Chépica,LGBO,06-OH,24212.0,43178.0,56
+22-02-2023,8,6310,Libertador General Bernardo O'Higgins,Colchagua,Santa Cruz,LGBO,06-OH,41320.0,43615.0,94
+22-02-2023,8,6309,Libertador General Bernardo O'Higgins,Colchagua,Pumanque,LGBO,06-OH,11152.0,46248.0,24
+22-02-2023,8,6206,Libertador General Bernardo O'Higgins,Cardenal Caro,Paredones,LGBO,06-OH,0.0,54076.0,0
+22-02-2023,8,6205,Libertador General Bernardo O'Higgins,Cardenal Caro,Navidad,LGBO,06-OH,0.0,31686.0,0
+22-02-2023,8,6203,Libertador General Bernardo O'Higgins,Cardenal Caro,Litueche,LGBO,06-OH,0.0,60052.0,0
+22-02-2023,8,6204,Libertador General Bernardo O'Higgins,Cardenal Caro,Marchihue,LGBO,06-OH,12498.0,67752.0,18
+22-02-2023,8,6202,Libertador General Bernardo O'Higgins,Cardenal Caro,La Estrella,LGBO,06-OH,658.0,40184.0,1
+22-02-2023,8,6201,Libertador General Bernardo O'Higgins,Cardenal Caro,Pichilemu,LGBO,06-OH,0.0,65755.0,0
+22-02-2023,9,7104,Maule,Talca,Empedrado,MAULE,07-MA,0.0,54756.0,0
+22-02-2023,9,7102,Maule,Talca,Constitución,MAULE,07-MA,0.0,123494.0,0
+22-02-2023,9,7101,Maule,Talca,Talca,MAULE,07-MA,14298.0,16243.0,88
+22-02-2023,9,7110,Maule,Talca,San Rafael,MAULE,07-MA,27952.0,27952.0,100
+22-02-2023,9,7109,Maule,Talca,San Clemente,MAULE,07-MA,16886.0,232198.0,7
+22-02-2023,9,7107,Maule,Talca,Pencahue,MAULE,07-MA,41309.0,94940.0,43
+22-02-2023,9,7108,Maule,Talca,Río Claro,MAULE,07-MA,32219.0,40019.0,80
+22-02-2023,9,7106,Maule,Talca,Pelarco,MAULE,07-MA,28925.0,30550.0,94
+22-02-2023,9,7105,Maule,Talca,Maule,MAULE,07-MA,1300.0,21076.0,6
+22-02-2023,9,7103,Maule,Talca,Curepto,MAULE,07-MA,1956.0,102650.0,1
+22-02-2023,9,7302,Maule,Curicó,Hualañé,MAULE,07-MA,4890.0,63049.0,7
+22-02-2023,9,7301,Maule,Curicó,Curicó,MAULE,07-MA,28384.0,87969.0,32
+22-02-2023,9,7308,Maule,Curicó,Teno,MAULE,07-MA,30411.0,65723.0,46
+22-02-2023,9,7309,Maule,Curicó,Vichuquén,MAULE,07-MA,0.0,43826.0,0
+22-02-2023,9,7307,Maule,Curicó,Sagrada Familia,MAULE,07-MA,58677.0,59655.0,98
+22-02-2023,9,7306,Maule,Curicó,Romeral,MAULE,07-MA,5875.0,97193.0,6
+22-02-2023,9,7304,Maule,Curicó,Molina,MAULE,07-MA,31619.0,97596.0,32
+22-02-2023,9,7305,Maule,Curicó,Rauco,MAULE,07-MA,8495.0,31376.0,27
+22-02-2023,9,7303,Maule,Curicó,Licantén,MAULE,07-MA,0.0,27758.0,0
+22-02-2023,9,7404,Maule,Linares,Parral,MAULE,07-MA,0.0,156837.0,0
+22-02-2023,9,7402,Maule,Linares,Colbún,MAULE,07-MA,28888.0,199780.0,14
+22-02-2023,9,7403,Maule,Linares,Longaví,MAULE,07-MA,0.0,135588.0,0
+22-02-2023,9,7401,Maule,Linares,Linares,MAULE,07-MA,0.0,121313.0,0
+22-02-2023,9,7408,Maule,Linares,Yerbas Buenas,MAULE,07-MA,0.0,28810.0,0
+22-02-2023,9,7406,Maule,Linares,San Javier,MAULE,07-MA,0.0,133759.0,0
+22-02-2023,9,7407,Maule,Linares,Villa Alegre,MAULE,07-MA,0.0,18460.0,0
+22-02-2023,9,7405,Maule,Linares,Retiro,MAULE,07-MA,0.0,87067.0,0
+22-02-2023,9,7203,Maule,Cauquenes,Pelluhue,MAULE,07-MA,0.0,36809.0,0
+22-02-2023,9,7201,Maule,Cauquenes,Cauquenes,MAULE,07-MA,0.0,205470.0,0
+22-02-2023,9,7202,Maule,Cauquenes,Chanco,MAULE,07-MA,0.0,53083.0,0
+22-02-2023,11,8206,Biobío,Arauco,Los Alamos,BBIO,08-BI,0.0,64710.0,0
+22-02-2023,11,8204,Biobío,Arauco,Contulmo,BBIO,08-BI,0.0,58721.0,0
+22-02-2023,11,8207,Biobío,Arauco,Tirúa,BBIO,08-BI,0.0,57577.0,0
+22-02-2023,11,8202,Biobío,Arauco,Arauco,BBIO,08-BI,0.0,95127.0,0
+22-02-2023,11,8205,Biobío,Arauco,Curanilahue,BBIO,08-BI,0.0,97749.0,0
+22-02-2023,11,8201,Biobío,Arauco,Lebu,BBIO,08-BI,0.0,52376.0,0
+22-02-2023,11,8203,Biobío,Arauco,Cañete,BBIO,08-BI,0.0,97872.0,0
+22-02-2023,11,8314,Biobío,Biobío,Alto Biobío,BBIO,08-BI,123669.0,195156.0,63
+22-02-2023,11,8310,Biobío,Biobío,San Rosendo,BBIO,08-BI,0.0,9205.0,0
+22-02-2023,11,8313,Biobío,Biobío,Yumbel,BBIO,08-BI,0.0,76336.0,0
+22-02-2023,11,8309,Biobío,Biobío,Quilleco,BBIO,08-BI,0.0,112984.0,0
+22-02-2023,11,8312,Biobío,Biobío,Tucapel,BBIO,08-BI,0.0,92358.0,0
+22-02-2023,11,8308,Biobío,Biobío,Quilaco,BBIO,08-BI,1256.0,107828.0,1
+22-02-2023,11,8307,Biobío,Biobío,Negrete,BBIO,08-BI,0.0,15168.0,0
+22-02-2023,11,8303,Biobío,Biobío,Cabrero,BBIO,08-BI,0.0,61713.0,0
+22-02-2023,11,8306,Biobío,Biobío,Nacimiento,BBIO,08-BI,0.0,91104.0,0
+22-02-2023,11,8302,Biobío,Biobío,Antuco,BBIO,08-BI,82733.0,144285.0,57
+22-02-2023,11,8305,Biobío,Biobío,Mulchén,BBIO,08-BI,3470.0,184521.0,1
+22-02-2023,11,8301,Biobío,Biobío,Los Angeles,BBIO,08-BI,0.0,164318.0,0
+22-02-2023,11,8304,Biobío,Biobío,Laja,BBIO,08-BI,0.0,33285.0,0
+22-02-2023,11,8311,Biobío,Biobío,Santa Bárbara,BBIO,08-BI,7268.0,122241.0,5
+22-02-2023,11,8108,Biobío,Concepción,San Pedro de la Paz,BBIO,08-BI,0.0,7656.0,0
+22-02-2023,11,8106,Biobío,Concepción,Lota,BBIO,08-BI,0.0,9858.0,0
+22-02-2023,11,8107,Biobío,Concepción,Penco,BBIO,08-BI,0.0,10531.0,0
+22-02-2023,11,8105,Biobío,Concepción,Hualqui,BBIO,08-BI,0.0,49966.0,0
+22-02-2023,11,8104,Biobío,Concepción,Florida,BBIO,08-BI,0.0,58072.0,0
+22-02-2023,11,8101,Biobío,Concepción,Concepción,BBIO,08-BI,0.0,16588.0,0
+22-02-2023,11,8103,Biobío,Concepción,Chiguayante,BBIO,08-BI,0.0,5104.0,0
+22-02-2023,11,8112,Biobío,Concepción,Hualpén,BBIO,08-BI,0.0,4785.0,0
+22-02-2023,11,8102,Biobío,Concepción,Coronel,BBIO,08-BI,0.0,22911.0,0
+22-02-2023,11,8110,Biobío,Concepción,Talcahuano,BBIO,08-BI,0.0,4156.0,0
+22-02-2023,11,8111,Biobío,Concepción,Tomé,BBIO,08-BI,0.0,48637.0,0
+22-02-2023,11,8109,Biobío,Concepción,Santa Juana,BBIO,08-BI,0.0,74225.0,0
+22-02-2023,12,9109,La Araucanía,Cautín,Loncoche,ARAUC,09-AR,0.0,95293.0,0
+22-02-2023,12,9116,La Araucanía,Cautín,Saavedra,ARAUC,09-AR,0.0,29823.0,0
+22-02-2023,12,9105,La Araucanía,Cautín,Freire,ARAUC,09-AR,0.0,82779.0,0
+22-02-2023,12,9112,La Araucanía,Cautín,Padre Las Casas,ARAUC,09-AR,0.0,46940.0,0
+22-02-2023,12,9107,La Araucanía,Cautín,Gorbea,ARAUC,09-AR,0.0,63361.0,0
+22-02-2023,12,9103,La Araucanía,Cautín,Cunco,ARAUC,09-AR,0.0,172708.0,0
+22-02-2023,12,9114,La Araucanía,Cautín,Pitrufquén,ARAUC,09-AR,0.0,60685.0,0
+22-02-2023,12,9110,La Araucanía,Cautín,Melipeuco,ARAUC,09-AR,0.0,91932.0,0
+22-02-2023,12,9101,La Araucanía,Cautín,Temuco,ARAUC,09-AR,0.0,40151.0,0
+22-02-2023,12,9121,La Araucanía,Cautín,Cholchol,ARAUC,09-AR,0.0,45515.0,0
+22-02-2023,12,9108,La Araucanía,Cautín,Lautaro,ARAUC,09-AR,0.0,86101.0,0
+22-02-2023,12,9119,La Araucanía,Cautín,Vilcún,ARAUC,09-AR,0.0,139392.0,0
+22-02-2023,12,9106,La Araucanía,Cautín,Galvarino,ARAUC,09-AR,0.0,53074.0,0
+22-02-2023,12,9102,La Araucanía,Cautín,Carahue,ARAUC,09-AR,0.0,129611.0,0
+22-02-2023,12,9117,La Araucanía,Cautín,Teodoro Schmidt,ARAUC,09-AR,0.0,62904.0,0
+22-02-2023,12,9113,La Araucanía,Cautín,Perquenco,ARAUC,09-AR,0.0,33712.0,0
+22-02-2023,12,9104,La Araucanía,Cautín,Curarrehue,ARAUC,09-AR,310.0,109516.0,0
+22-02-2023,12,9120,La Araucanía,Cautín,Villarrica,ARAUC,09-AR,0.0,113236.0,0
+22-02-2023,12,9115,La Araucanía,Cautín,Pucón,ARAUC,09-AR,0.0,114853.0,0
+22-02-2023,12,9111,La Araucanía,Cautín,Nueva Imperial,ARAUC,09-AR,0.0,72456.0,0
+22-02-2023,12,9118,La Araucanía,Cautín,Toltén,ARAUC,09-AR,0.0,84672.0,0
+22-02-2023,12,9204,La Araucanía,Malleco,Ercilla,ARAUC,09-AR,0.0,50859.0,0
+22-02-2023,12,9202,La Araucanía,Malleco,Collipulli,ARAUC,09-AR,0.0,132245.0,0
+22-02-2023,12,9211,La Araucanía,Malleco,Victoria,ARAUC,09-AR,0.0,131443.0,0
+22-02-2023,12,9207,La Araucanía,Malleco,Lumaco,ARAUC,09-AR,0.0,112972.0,0
+22-02-2023,12,9209,La Araucanía,Malleco,Renaico,ARAUC,09-AR,4733.0,29959.0,15
+22-02-2023,12,9205,La Araucanía,Malleco,Lonquimay,ARAUC,09-AR,246567.0,361753.0,68
+22-02-2023,12,9203,La Araucanía,Malleco,Curacautín,ARAUC,09-AR,0.0,158040.0,0
+22-02-2023,12,9210,La Araucanía,Malleco,Traiguén,ARAUC,09-AR,0.0,91134.0,0
+22-02-2023,12,9206,La Araucanía,Malleco,Los Sauces,ARAUC,09-AR,0.0,84543.0,0
+22-02-2023,12,9201,La Araucanía,Malleco,Angol,ARAUC,09-AR,0.0,114744.0,0
+22-02-2023,12,9208,La Araucanía,Malleco,Purén,ARAUC,09-AR,0.0,50893.0,0
+22-02-2023,14,10301,Los Lagos,Osorno,Osorno,LAGOS,10-LL,0.0,84800.0,0
+22-02-2023,14,10307,Los Lagos,Osorno,San Pablo,LAGOS,10-LL,0.0,63774.0,0
+22-02-2023,14,10306,Los Lagos,Osorno,San Juan de la Costa,LAGOS,10-LL,0.0,150126.0,0
+22-02-2023,14,10305,Los Lagos,Osorno,Río Negro,LAGOS,10-LL,0.0,129906.0,0
+22-02-2023,14,10304,Los Lagos,Osorno,Puyehue,LAGOS,10-LL,0.0,137558.0,0
+22-02-2023,14,10303,Los Lagos,Osorno,Purranque,LAGOS,10-LL,0.0,145545.0,0
+22-02-2023,14,10302,Los Lagos,Osorno,Puerto Octay,LAGOS,10-LL,0.0,148582.0,0
+22-02-2023,14,10401,Los Lagos,Palena,Chaitén,LAGOS,10-LL,0.0,703180.0,0
+22-02-2023,14,10404,Los Lagos,Palena,Palena,LAGOS,10-LL,0.0,214834.0,0
+22-02-2023,14,10403,Los Lagos,Palena,Hualaihué,LAGOS,10-LL,0.0,238705.0,0
+22-02-2023,14,10402,Los Lagos,Palena,Futaleufú,LAGOS,10-LL,0.0,98961.0,0
+22-02-2023,14,10201,Los Lagos,Chiloé,Castro,LAGOS,10-LL,0.0,41490.0,0
+22-02-2023,14,10208,Los Lagos,Chiloé,Quellón,LAGOS,10-LL,0.0,323783.0,0
+22-02-2023,14,10204,Los Lagos,Chiloé,Curaco de Vélez,LAGOS,10-LL,0.0,8249.0,0
+22-02-2023,14,10206,Los Lagos,Chiloé,Puqueldón,LAGOS,10-LL,0.0,9698.0,0
+22-02-2023,14,10202,Los Lagos,Chiloé,Ancud,LAGOS,10-LL,0.0,163051.0,0
+22-02-2023,14,10209,Los Lagos,Chiloé,Quemchi,LAGOS,10-LL,0.0,39624.0,0
+22-02-2023,14,10205,Los Lagos,Chiloé,Dalcahue,LAGOS,10-LL,0.0,125987.0,0
+22-02-2023,14,10207,Los Lagos,Chiloé,Queilén,LAGOS,10-LL,0.0,32198.0,0
+22-02-2023,14,10203,Los Lagos,Chiloé,Chonchi,LAGOS,10-LL,0.0,127044.0,0
+22-02-2023,14,10210,Los Lagos,Chiloé,Quinchao,LAGOS,10-LL,0.0,10884.0,0
+22-02-2023,14,10109,Los Lagos,Llanquihue,Puerto Varas,LAGOS,10-LL,0.0,322127.0,0
+22-02-2023,14,10107,Los Lagos,Llanquihue,Llanquihue,LAGOS,10-LL,0.0,37800.0,0
+22-02-2023,14,10103,Los Lagos,Llanquihue,Cochamó,LAGOS,10-LL,0.0,338798.0,0
+22-02-2023,14,10105,Los Lagos,Llanquihue,Frutillar,LAGOS,10-LL,0.0,61060.0,0
+22-02-2023,14,10101,Los Lagos,Llanquihue,Puerto Montt,LAGOS,10-LL,0.0,150329.0,0
+22-02-2023,14,10108,Los Lagos,Llanquihue,Maullín,LAGOS,10-LL,0.0,80231.0,0
+22-02-2023,14,10106,Los Lagos,Llanquihue,Los Muermos,LAGOS,10-LL,0.0,121835.0,0
+22-02-2023,14,10102,Los Lagos,Llanquihue,Calbuco,LAGOS,10-LL,0.0,50938.0,0
+22-02-2023,14,10104,Los Lagos,Llanquihue,Fresia,LAGOS,10-LL,0.0,121952.0,0
+22-02-2023,15,11203,Aysén del General Carlos Ibáñez del Campo,Aisén,Guaitecas,AYSEN,11-AI,0.0,53762.0,0
+22-02-2023,15,11201,Aysén del General Carlos Ibáñez del Campo,Aisén,Aisén,AYSEN,11-AI,0.0,2468347.0,0
+22-02-2023,15,11202,Aysén del General Carlos Ibáñez del Campo,Aisén,Cisnes,AYSEN,11-AI,0.0,1401148.0,0
+22-02-2023,15,11102,Aysén del General Carlos Ibáñez del Campo,Coihaique,Lago Verde,AYSEN,11-AI,0.0,458539.0,0
+22-02-2023,15,11101,Aysén del General Carlos Ibáñez del Campo,Coihaique,Coihaique,AYSEN,11-AI,0.0,594835.0,0
+22-02-2023,15,11303,Aysén del General Carlos Ibáñez del Campo,Capitán Prat,Tortel,AYSEN,11-AI,0.0,1452574.0,0
+22-02-2023,15,11301,Aysén del General Carlos Ibáñez del Campo,Capitán Prat,Cochrane,AYSEN,11-AI,0.0,493826.0,0
+22-02-2023,15,11302,Aysén del General Carlos Ibáñez del Campo,Capitán Prat,O'Higgins,AYSEN,11-AI,0.0,337642.0,0
+22-02-2023,15,11402,Aysén del General Carlos Ibáñez del Campo,General Carrera,Río Ibáñez,AYSEN,11-AI,0.0,328178.0,0
+22-02-2023,15,11401,Aysén del General Carlos Ibáñez del Campo,General Carrera,Chile Chico,AYSEN,11-AI,0.0,253275.0,0
+22-02-2023,16,12104,Magallanes y de la Antártica Chilena,Magallanes,San Gregorio,MAG,12-MG,0.0,675307.0,0
+22-02-2023,16,12101,Magallanes y de la Antártica Chilena,Magallanes,Punta Arenas,MAG,12-MG,0.0,1423380.0,0
+22-02-2023,16,12102,Magallanes y de la Antártica Chilena,Magallanes,Laguna Blanca,MAG,12-MG,0.0,338257.0,0
+22-02-2023,16,12103,Magallanes y de la Antártica Chilena,Magallanes,Río Verde,MAG,12-MG,0.0,719631.0,0
+22-02-2023,16,12303,Magallanes y de la Antártica Chilena,Tierra del Fuego,Timaukel,MAG,12-MG,0.0,840187.0,0
+22-02-2023,16,12301,Magallanes y de la Antártica Chilena,Tierra del Fuego,Porvenir,MAG,12-MG,0.0,717032.0,0
+22-02-2023,16,12302,Magallanes y de la Antártica Chilena,Tierra del Fuego,Primavera,MAG,12-MG,0.0,397664.0,0
+22-02-2023,16,12402,Magallanes y de la Antártica Chilena,Última Esperanza,Torres del Paine,MAG,12-MG,0.0,379142.0,0
+22-02-2023,16,12401,Magallanes y de la Antártica Chilena,Última Esperanza,Natales,MAG,12-MG,0.0,3569298.0,0
+22-02-2023,16,12201,Magallanes y de la Antártica Chilena,Antártica Chilena,Cabo de Hornos,MAG,12-MG,0.0,1018840.0,0
+22-02-2023,7,13401,Metropolitana de Santiago,Maipo,San Bernardo,RM,13-RM,0.0,9624.0,0
+22-02-2023,7,13404,Metropolitana de Santiago,Maipo,Paine,RM,13-RM,12909.0,66848.0,19
+22-02-2023,7,13403,Metropolitana de Santiago,Maipo,Calera de Tango,RM,13-RM,0.0,6308.0,0
+22-02-2023,7,13402,Metropolitana de Santiago,Maipo,Buin,RM,13-RM,3310.0,18210.0,18
+22-02-2023,7,13110,Metropolitana de Santiago,Santiago,La Florida,RM,13-RM,0.0,2988.0,0
+22-02-2023,7,13127,Metropolitana de Santiago,Santiago,Recoleta,RM,13-RM,0.0,998.0,0
+22-02-2023,7,13107,Metropolitana de Santiago,Santiago,Huechuraba,RM,13-RM,0.0,2331.0,0
+22-02-2023,7,13128,Metropolitana de Santiago,Santiago,Renca,RM,13-RM,0.0,333.0,0
+22-02-2023,7,13125,Metropolitana de Santiago,Santiago,Quilicura,RM,13-RM,0.0,1665.0,0
+22-02-2023,7,13132,Metropolitana de Santiago,Santiago,Vitacura,RM,13-RM,0.0,1998.0,0
+22-02-2023,7,13102,Metropolitana de Santiago,Santiago,Cerrillos,RM,13-RM,0.0,332.0,0
+22-02-2023,7,13122,Metropolitana de Santiago,Santiago,Peñalolén,RM,13-RM,0.0,2656.0,0
+22-02-2023,7,13119,Metropolitana de Santiago,Santiago,Maipú,RM,13-RM,0.0,7968.0,0
+22-02-2023,7,13115,Metropolitana de Santiago,Santiago,Lo Barnechea,RM,13-RM,0.0,53259.0,0
+22-02-2023,7,13124,Metropolitana de Santiago,Santiago,Pudahuel,RM,13-RM,0.0,15625.0,0
+22-02-2023,7,13113,Metropolitana de Santiago,Santiago,La Reina,RM,13-RM,0.0,664.0,0
+22-02-2023,7,13114,Metropolitana de Santiago,Santiago,Las Condes,RM,13-RM,0.0,5319.0,0
+22-02-2023,7,13112,Metropolitana de Santiago,Santiago,La Pintana,RM,13-RM,0.0,1992.0,0
+22-02-2023,7,13301,Metropolitana de Santiago,Chacabuco,Colina,RM,13-RM,0.0,81722.0,0
+22-02-2023,7,13303,Metropolitana de Santiago,Chacabuco,Tiltil,RM,13-RM,0.0,60425.0,0
+22-02-2023,7,13302,Metropolitana de Santiago,Chacabuco,Lampa,RM,13-RM,0.0,40293.0,0
+22-02-2023,7,13505,Metropolitana de Santiago,Melipilla,San Pedro,RM,13-RM,0.0,84273.0,0
+22-02-2023,7,13504,Metropolitana de Santiago,Melipilla,María Pinto,RM,13-RM,0.0,42829.0,0
+22-02-2023,7,13503,Metropolitana de Santiago,Melipilla,Curacaví,RM,13-RM,0.0,68541.0,0
+22-02-2023,7,13502,Metropolitana de Santiago,Melipilla,Alhué,RM,13-RM,4300.0,85821.0,5
+22-02-2023,7,13501,Metropolitana de Santiago,Melipilla,Melipilla,RM,13-RM,5956.0,129882.0,4
+22-02-2023,7,13603,Metropolitana de Santiago,Talagante,Isla de Maipo,RM,13-RM,993.0,21184.0,4
+22-02-2023,7,13602,Metropolitana de Santiago,Talagante,El Monte,RM,13-RM,0.0,10618.0,0
+22-02-2023,7,13605,Metropolitana de Santiago,Talagante,Peñaflor,RM,13-RM,0.0,7304.0,0
+22-02-2023,7,13601,Metropolitana de Santiago,Talagante,Talagante,RM,13-RM,0.0,10279.0,0
+22-02-2023,7,13604,Metropolitana de Santiago,Talagante,Padre Hurtado,RM,13-RM,0.0,7636.0,0
+22-02-2023,7,13202,Metropolitana de Santiago,Cordillera,Pirque,RM,13-RM,0.0,38109.0,0
+22-02-2023,7,13203,Metropolitana de Santiago,Cordillera,San José de Maipo,RM,13-RM,0.0,121014.0,0
+22-02-2023,7,13201,Metropolitana de Santiago,Cordillera,Puente Alto,RM,13-RM,0.0,3652.0,0
+22-02-2023,13,14204,Los Ríos,Ranco,Río Bueno,RIOS,14-LR,0.0,206011.0,0
+22-02-2023,13,14202,Los Ríos,Ranco,Futrono,RIOS,14-LR,0.0,189744.0,0
+22-02-2023,13,14203,Los Ríos,Ranco,Lago Ranco,RIOS,14-LR,0.0,132187.0,0
+22-02-2023,13,14201,Los Ríos,Ranco,La Unión,RIOS,14-LR,0.0,213903.0,0
+22-02-2023,13,14105,Los Ríos,Valdivia,Máfil,RIOS,14-LR,0.0,57088.0,0
+22-02-2023,13,14108,Los Ríos,Valdivia,Panguipulli,RIOS,14-LR,0.0,300314.0,0
+22-02-2023,13,14107,Los Ríos,Valdivia,Paillaco,RIOS,14-LR,0.0,90029.0,0
+22-02-2023,13,14103,Los Ríos,Valdivia,Lanco,RIOS,14-LR,0.0,51110.0,0
+22-02-2023,13,14106,Los Ríos,Valdivia,Mariquina,RIOS,14-LR,0.0,135679.0,0
+22-02-2023,13,14102,Los Ríos,Valdivia,Corral,RIOS,14-LR,0.0,67857.0,0
+22-02-2023,13,14101,Los Ríos,Valdivia,Valdivia,RIOS,14-LR,0.0,90987.0,0
+22-02-2023,13,14104,Los Ríos,Valdivia,Los Lagos,RIOS,14-LR,0.0,164687.0,0
+22-02-2023,1,15102,Arica y Parinacota,Arica,Camarones,AyP,15-AP,0.0,100757.0,0
+22-02-2023,1,15101,Arica y Parinacota,Arica,Arica,AyP,15-AP,0.0,3771.0,0
+22-02-2023,1,15201,Arica y Parinacota,Parinacota,Putre,AyP,15-AP,0.0,142834.0,0
+22-02-2023,1,15202,Arica y Parinacota,Parinacota,General Lagos,AyP,15-AP,0.0,111580.0,0
+22-02-2023,10,16207,Ñuble,Itata,Treguaco,NUBLE,16-NB,0.0,31115.0,0
+22-02-2023,10,16203,Ñuble,Itata,Coelemu,NUBLE,16-NB,0.0,32672.0,0
+22-02-2023,10,16205,Ñuble,Itata,Portezuelo,NUBLE,16-NB,0.0,27201.0,0
+22-02-2023,10,16201,Ñuble,Itata,Quirihue,NUBLE,16-NB,0.0,55955.0,0
+22-02-2023,10,16202,Ñuble,Itata,Cobquecura,NUBLE,16-NB,0.0,57580.0,0
+22-02-2023,10,16206,Ñuble,Itata,Ranquil,NUBLE,16-NB,2560.0,26560.0,9
+22-02-2023,10,16204,Ñuble,Itata,Ninhue,NUBLE,16-NB,0.0,39484.0,0
+22-02-2023,10,16302,Ñuble,Punilla,Coihueco,NUBLE,16-NB,13407.0,163650.0,8
+22-02-2023,10,16305,Ñuble,Punilla,San Nicolás,NUBLE,16-NB,0.0,60887.0,0
+22-02-2023,10,16303,Ñuble,Punilla,Ñiquén,NUBLE,16-NB,0.0,52355.0,0
+22-02-2023,10,16301,Ñuble,Punilla,San Carlos,NUBLE,16-NB,0.0,85028.0,0
+22-02-2023,10,16304,Ñuble,Punilla,San Fabián,NUBLE,16-NB,10212.0,149476.0,6
+22-02-2023,10,16103,Ñuble,Diguillín,Chillán Viejo,NUBLE,16-NB,0.0,28151.0,0
+22-02-2023,10,16102,Ñuble,Diguillín,Bulnes,NUBLE,16-NB,0.0,40204.0,0
+22-02-2023,10,16109,Ñuble,Diguillín,Yungay,NUBLE,16-NB,318.0,87450.0,0
+22-02-2023,10,16108,Ñuble,Diguillín,San Ignacio,NUBLE,16-NB,0.0,38280.0,0
+22-02-2023,10,16107,Ñuble,Diguillín,Quillón,NUBLE,16-NB,320.0,42119.0,0
+22-02-2023,10,16106,Ñuble,Diguillín,Pinto,NUBLE,16-NB,10496.0,91782.0,11
+22-02-2023,10,16105,Ñuble,Diguillín,Pemuco,NUBLE,16-NB,0.0,55720.0,0
+22-02-2023,10,16101,Ñuble,Diguillín,Chillán,NUBLE,16-NB,640.0,37116.0,1
+22-02-2023,10,16104,Ñuble,Diguillín,El Carmen,NUBLE,16-NB,0.0,63457.0,0
