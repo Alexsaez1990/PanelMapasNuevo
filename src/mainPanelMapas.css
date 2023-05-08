@@ -71,13 +71,42 @@ body,html{height: 99%; width: 99%;}
         display: none !important;
     }
 
-    .leyenda_movil { /* FALTA EN EL JS PONER EL TAMAÑO INICIAL DE LOS MAPAS MÁS GRANDE */
+    #mapa1 {
+        height: 90% !important; 
+    }
+    #mapa2 {
+        height: 90% !important; 
+    }
+    #mapa3 {
+        height: 90% !important; 
+    }
+    #mapa4 {
+        height: 90% !important; 
+    }
+    #mapa5 {
+        height: 90% !important; 
+    }
+
+    #logo_movil2 {
+        /*height: 100%; 
+        width: 100%;*/
+        bottom: 0;
+        right: 0;
+        transform: translate(47%, 29%) scale(0.1);
+        opacity: 0%;
+        z-index: 900;
+        /*border: 1px solid black;*/
+    }
+
+    .leyenda_movil { 
         /*display: block; */
-        align-items: left bottom;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
         width: 91%;
         left: 9%;
         bottom: 0%;
-        height: 20%; 
+        height: 10%; 
         position: absolute;
         flex-basis: 100%;
         z-index: 200;
@@ -85,355 +114,576 @@ body,html{height: 99%; width: 99%;}
     }
     
     .leyendaTexto {
+        width: 1.4em !important;
+        height: 1.4em !important;
         display: inline-block !important;
-        margin-left: 3.5% !important;
+        margin-left: 1% !important;
+        margin-right: 0.5% !important;
         font-size: 0.75em !important;
-    /* border: 1px solid yellow;*/
+        font-weight: bolder;
+        /*border: 1px solid black;*/
     }
 
-    #mapa1 {
-        height: 80% !important; 
-    }
-    #mapa2 {
-        height: 80% !important; 
-    }
-    #mapa3 {
-        height: 80% !important; 
-    }
-    #mapa4 {
-        height: 80% !important; 
-    }
-    #mapa5 {
-        height: 80% !important; 
-    }
-
-    .leyendaHCFM { /*   */
-        display: inline-block !important;
+    .leyendaHCFM { 
+        display: flex !important;
+        flex-direction: row !important;
+        flex: 1 !important;
+        justify-content: flex-start !important;
         height: 100% !important;
-        margin-top: 1% !important;
-        column-count: 4 !important;
-        column-gap: 0.75em;
-        width: 45% !important;
-        margin-left: 4% !important;
-        float: auto !important;
+        margin-top: 3% !important;
+        /*width: 45% !important;*/
+        max-width: 47.5% !important;
+        margin-left: 0% !important;
+        /*border: 1px solid black;*/
+    }
+
+    .HCFMLeyendaTitulo{
+        margin-left: 8% !important;
+        margin-right: 7% !important;
+        font-weight: 900 !important;
+
     }
 
     .HCFM1 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM2 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM3 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM4 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -60% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM5 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -60% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM6 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -60% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM7 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -70% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM8 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -70% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM9 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -70% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     .HCFM10 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -70% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
 
     .leyendaHR {
-        display: inline-block !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex: 1 !important;
+        justify-content: flex-start !important;
         height: 100% !important;
-        margin-top: 1% !important;
-        column-count: 4 !important;
-        column-gap: 0.75em;
-        width: 45% !important;
-        margin-left: 4% !important;
-        float: auto !important;
+        margin-top: 3% !important;
+        /*width: 45% !important;*/
+        max-width: 47.5% !important;
+        margin-left: 0% !important;
+        /*border: 1px solid black;*/
+        justify-content: start !important;
+    }
+
+    .HRLeyendaTitulo{
+        margin-left: 8% !important;
+        margin-right: 2% !important;
+        font-weight: 900 !important;
+
     }
     
     .HR1 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        
     }
     
     .HR2 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR3 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR4 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR5 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR6 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR7 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR8 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR9 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .HR10 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .leyendaProbIgnicion {
-        display: inline-block !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex: 1 !important;
+        justify-content: flex-start !important;
         height: 100% !important;
-        margin-top: 1% !important;
-        column-count: 4 !important;
-        column-gap: 0.75em;
+        margin-top: 3% !important;
         width: 45% !important;
-        margin-left: 4% !important;
-        float: auto !important;
+        margin-left: 0% !important;
+        /*border: 1px solid black;*/
+        justify-content: start !important;
+    }
+
+    .ProbIgnicionLeyendaTitulo{
+        margin-left: 8% !important;
+        margin-right: 6% !important;
+        font-weight: 900 !important;
+
     }
     
     .ProbIgnicion1 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion2 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion3 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion4 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion5 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion6 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion7 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion8 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion9 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .ProbIgnicion10 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
 
     .leyendaTemp {
-        display: inline-block !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex: 1 !important;
+        justify-content: flex-start !important;
         height: 100% !important;
-        margin-top: 1% !important;
-        column-count: 3 !important;
-        column-gap: 0.75em;
+        margin-top: 3% !important;
         width: 45% !important;
-        margin-left: 4% !important;
-        float: auto !important;
+        margin-left: 0% !important;
+        /*border: 1px solid black;*/
+        justify-content: start !important;
+    }
 
+    .TempLeyendaTitulo{
+        margin-left: 8% !important;
+        margin-right: 5% !important;
+        font-weight: 900 !important;
     }
     
     .Temp1 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -20% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp2 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -20% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp3 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -20% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp4 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -45% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp5 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -45% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp6 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -45% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp7 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -55% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp8 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -55% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Temp9 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -55% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        
     }
 
     .leyendaViento {
-        display: inline-block !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex: 1 !important;
+        justify-content: flex-start !important;
         height: 100% !important;
-        margin-top: 1% !important;
-        column-count: 3 !important;
-        column-gap: 0.75em;
+        margin-top: 3% !important;
         width: 45% !important;
-        margin-left: 4% !important;
-        float: auto !important;
+        margin-left: 0% !important;
+        /*border: 1px solid black;*/
+        justify-content: start !important;
+    }
+
+    .VientoLeyendaTitulo{
+        margin-left: 8% !important;
+        margin-right: 5% !important;
+        font-weight: 900 !important;
     }
     
     .Viento1 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -25% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento2 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -25% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento3 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -25% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento4 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento5 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento6 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -40% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento7 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -45% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
     
     .Viento8 {
-        width: 0.55em !important;
-        height: 0.55em !important;
-        margin-left: -45% !important;
+        width: 1.5em !important;
+        height: 1em !important;
+        margin-left: 0% !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
 
 
